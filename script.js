@@ -32,25 +32,40 @@
 
 
 // wap to swap the minimun and maximun number in an array 
-let arr = [8,81,2,3,4,5,6,7,8,9]
-let min = 0
-let max = 0
+// let arr = [8,81,2,3,4,5,6,7,8,9]
+// let min = 0
+// let max = 0
 
-for(let i = 0;i<arr.length;i++){
-    if(arr[i]>arr[max]){
-        max = i
-    }
-    if(arr[i]<arr[min]){
-        min = i
-    }
+// for(let i = 0;i<arr.length;i++){
+//     if(arr[i]>arr[max]){
+//         max = i
+//     }
+//     if(arr[i]<arr[min]){
+//         min = i
+//     }
   
-} 
- console.log("Before SWapping ");
-console.log(min);
-console.log(max);
-    let temp = min
-    min = max
-    max = temp
-console.log("After SWapping ");
-console.log(min);
-console.log(max);
+// } 
+//  console.log("Before SWapping ");
+// console.log(min);
+// console.log(max);
+//     let temp = min
+//     min = max
+//     max = temp
+// console.log("After SWapping ");
+// console.log(min);
+// console.log(max);
+
+
+// reverse the array using two pointer algorithm 
+let arr = [1,2,3,4,5,6,7,8,9,10]
+let i = 0
+let j = arr.length-1
+while(i<j){
+    let temp = arr[i]
+    arr[i] = arr[j];
+    arr[j] = temp;
+    i++
+    j--
+}
+console.log(arr);
+console.log(String.fromCharCode(30));

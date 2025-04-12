@@ -14,18 +14,43 @@
 
 /// wap to print the unique number in an array  
 
-let arr = [1,2,3,1,2,3,4,5,0]
-let unique = [];
+// let arr = [1,2,3,1,2,3,4,5,0]
+// let unique = [];
+
+// for(let i = 0;i<arr.length;i++){
+//     let count = 0;
+//     for(let j =0;j<arr.length;j++){
+//         if(arr[i] == arr[j]){
+//             count++;
+//         }
+//     }
+//     if(count == 1){
+//         unique.push(arr[i])
+//     }
+// }
+// console.log(unique);
+
+
+// wap to swap the minimun and maximun number in an array 
+let arr = [8,81,2,3,4,5,6,7,8,9]
+let min = 0
+let max = 0
 
 for(let i = 0;i<arr.length;i++){
-    let count = 0;
-    for(let j =0;j<arr.length;j++){
-        if(arr[i] == arr[j]){
-            count++;
-        }
+    if(arr[i]>arr[max]){
+        max = i
     }
-    if(count == 1){
-        unique.push(arr[i])
+    if(arr[i]<arr[min]){
+        min = i
     }
-}
-console.log(unique);
+  
+} 
+ console.log("Before SWapping ");
+console.log(min);
+console.log(max);
+    let temp = min
+    min = max
+    max = temp
+console.log("After SWapping ");
+console.log(min);
+console.log(max);

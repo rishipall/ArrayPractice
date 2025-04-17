@@ -72,18 +72,18 @@
 
 // wap to get the indexs of element which are eqal to target element 
 
-let arr = [3,2,4]
-let target = 5
-let index1 = -1
-let index2 = -1
+// let arr = [3,2,4]
+// let target = 5
+// let index1 = -1
+// let index2 = -1
 
-for(let i = 0;i<arr.length;i++){
-    if(arr[i]+arr[i+1] == target){
+// for(let i = 0;i<arr.length;i++){
+//     if(arr[i]+arr[i+1] == target){
 
-         index1 = arr[i]
-         index2 = arr[i+1]
-         break;
-    }
-}
+//          index1 = arr[i]
+//          index2 = arr[i+1]
+//          break;
+//     }
+// }
 
-console.log(arr.indexOf(index1),arr.indexOf(index2));
+// console.log(arr.indexOf(index1),arr.indexOf(index2));
